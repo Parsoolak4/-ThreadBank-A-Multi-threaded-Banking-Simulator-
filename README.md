@@ -51,3 +51,46 @@ The system's performance can be optimized by adjusting the buffer size. Current 
 - Trade-off between memory usage and throughput
 
 ## 📂 File Structure
+
+ThreadBank/
+├── src/
+│   ├── Driver.java
+│   ├── Network.java
+│   ├── Server.java
+│   ├── Client.java
+│   ├── Accounts.java
+│   └── Transactions.java
+├── data/
+│   ├── account.txt
+│   └── transaction.txt
+└── README.md
+
+
+
+## 🚀 Getting Started
+1. Clone the repository
+2. Compile all Java files
+3. Run Driver.java
+4. Monitor transaction processing through console output
+
+## 📝 Usage Example
+```java
+Network objNetwork = new Network("network");
+objNetwork.start();
+
+Server objServer = new Server();
+objServer.start();
+
+Client send = new Client("sending");
+Client receive = new Client("receiving");
+Copy
+Key tips for README organization:
+1. Use emojis sparingly for visual hierarchy
+2. Create clear sections with descriptive headers
+3. Use tables for structured data
+4. Include code blocks for examples
+5. Add a directory tree for file structure
+6. Use consistent formatting throughout
+7. Make important information easily scannable
+
+You can edit this in any text editor and GitHub will render the Markdown formatting. Would you like me to explain any specific formatting elements or help you modify any section?
